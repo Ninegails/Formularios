@@ -7,7 +7,9 @@
 <body>
     <h1>Cadastro de Usuário</h1>
     <hr>
-        <h2>Informações pessoais</h2>
+     
+        <fieldset>
+        <legend>Informações pessoais</legend>
         <!--Container-->
         <form name = "form_cadastro_usuario" action = "salvar-usuario.html" method = "post">
             <label for = "Nome">Nome: </label>
@@ -16,8 +18,10 @@
             <input id ="sobrenome" name = "sobrenome"><br><br>
             <label>E-mail: </label>
             <input id = "email" name = "email"><br><br>
+            </fieldset>
 
-            <h2>Informações de Usuário</h2>
+            <fieldset>
+            <legend>Informações de Usuário</legend>
             <hr>
             <label for = "nome-de-usuario">Nome de usuário: </label>
             <input id = "nome-de-usuario" name = "nome-de-usuario" placeholder = "Digite o seu nome de usuário"><br><br>
@@ -30,8 +34,10 @@
 
             <label for = "Dica-senha">Dica de Senha: </label>
             <input id = "Dica-senha" name = "Dica-senha" placeholder = "Dica para sua senha"><br>
+            </fieldset>
 
-            <h2>Redes Sociais</h2>
+            <fieldset>
+            <legend>Redes Sociais</legend>
             <hr>
             <img src = "linkedin.png"><label>LinkedIn: </label>
             <input id = "Linkedin" name = "Linkedin" placeholder = "Link do seu LinkedIn"></input><br>
@@ -41,6 +47,7 @@
 
             <img src = "insta.png"><label>Instagram: </label>
             <input id = "instagram" name = "instagram" placeholder = "Link para o seu Instagram"><br><br>
+            </fieldset>
             <button>Salvar</button>
 
          </form>
