@@ -9,35 +9,35 @@
     <hr>
      
         <fieldset>
-        <legend>Informações pessoais</legend>
+        <legend><strong>Informações pessoais</strong></legend>
         <!--Container-->
         <form name = "form_cadastro_usuario" action = "salvar-usuario.html" method = "post">
             <label for = "Nome">Nome: </label>
-            <input id = "nome" name = "nome">
-            <label>Sobrenome: </label>
-            <input id ="sobrenome" name = "sobrenome"><br><br>
-            <label>E-mail: </label>
-            <input id = "email" name = "email"><br><br>
+            <input id = "nome" name = "nome" required>
+            <label for = "sobrenome">Sobrenome: </label>
+            <input id ="sobrenome" name = "sobrenome" required><br><br>
+            <label for = "email">E-mail: </label>
+            <input id = "email" name = "email" required type = "email"><br><br>
             </fieldset>
 
             <fieldset>
-            <legend>Informações de Usuário</legend>
+            <legend><strong>Informações de Usuário</strong></legend>
             <hr>
             <label for = "nome-de-usuario">Nome de usuário: </label>
-            <input id = "nome-de-usuario" name = "nome-de-usuario" placeholder = "Digite o seu nome de usuário"><br><br>
+            <input id = "nome-de-usuario" name = "nome-de-usuario" placeholder = "Digite o seu nome de usuário" required><br><br>
 
             <label for = "Senha">Senha: </label>
-            <input id = "senha" name = "senha" type = "password" placeholder = "Digite sua senha">
+            <input id = "senha" name = "senha" type = "password" placeholder = "Digite sua senha" required>
 
             <label for = "confirmaçao-de-senha">Confirmação de Senha: </label>
-            <input id = "confirmaçao-senha" name = "confirmaçao-senha" type = "password" placeholder = "Confirme sua senha"><br><br>
+            <input id = "confirmaçao-senha" name = "confirmaçao-senha" type = "password" placeholder = "Confirme sua senha" required><br><br>
 
             <label for = "Dica-senha">Dica de Senha: </label>
-            <input id = "Dica-senha" name = "Dica-senha" placeholder = "Dica para sua senha"><br>
+            <input id = "Dica-senha" name = "Dica-senha" placeholder = "Dica para sua senha" required><br>
             </fieldset>
 
             <fieldset>
-            <legend>Redes Sociais</legend>
+            <legend><strong>Redes Sociais</strong></legend>
             <hr>
             <img src = "linkedin.png"><label>LinkedIn: </label>
             <input id = "Linkedin" name = "Linkedin" placeholder = "Link do seu LinkedIn"></input><br>
@@ -47,6 +47,21 @@
 
             <img src = "insta.png"><label>Instagram: </label>
             <input id = "instagram" name = "instagram" placeholder = "Link para o seu Instagram"><br><br>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend><strong>Contrato</strong></legend>
+                Aceita os termos do contrato?
+                <br>
+                <input type = "radio" name = "contrato">Sim &nbsp; &nbsp;<input type = "radio" name = "contrato">Não <br><br>
+
+                Aceita este outro contrato?
+                <select name = "contrato2">
+                    <option></option>
+                    <option>Sim</option>
+                    <option>Com certeza</option>
+                </select>
             </fieldset>
             <button>Salvar</button>
 
