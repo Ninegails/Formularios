@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cadastro de Usuário</h1>
+    <hr>
+        <h2>Informações pessoais</h2>
+        <!--Container-->
+        <form name = "form_cadastro_usuario" action = "salvar-usuario.html" method = "post">
+            <label for = "Nome">Nome: </label>
+            <input id = "nome" name = "nome">
+            <label>Sobrenome: </label>
+            <input id ="sobrenome" name = "sobrenome"><br><br>
+            <label>E-mail: </label>
+            <input id = "email" name = "email"><br><br>
+
+            <h2>Informações de Usuário</h2>
+            <hr>
+            <label for = "nome-de-usuario">Nome de usuário: </label>
+            <input id = "nome-de-usuario" name = "nome-de-usuario" placeholder = "Digite o seu nome de usuário"><br><br>
+
+            <label for = "Senha">Senha: </label>
+            <input id = "senha" name = "senha" type = "password" placeholder = "Digite sua senha">
+
+            <label for = "confirmaçao-de-senha">Confirmação de Senha: </label>
+            <input id = "confirmaçao-senha" name = "confirmaçao-senha" type = "password" placeholder = "Confirme sua senha"><br><br>
+
+            <label for = "Dica-senha">Dica de Senha: </label>
+            <input id = "Dica-senha" name = "Dica-senha" placeholder = "Dica para sua senha"><br>
+
+            <h2>Redes Sociais</h2>
+            <hr>
+            <img src = "linkedin.png"><label>LinkedIn: </label>
+            <input id = "Linkedin" name = "Linkedin" placeholder = "Link do seu LinkedIn"></input><br>
+
+            <img src ="face.png"><label>Facebook: </label>
+            <input id = "Facebook" name = "Facebook" placeholder = "Link para o seu facebook"><br>
+
+            <img src = "insta.png"><label>Instagram: </label>
+            <input id = "instagram" name = "instagram" placeholder = "Link para o seu Instagram"><br><br>
+            <button>Salvar</button>
+
+         </form>
+</body>
+</html>
