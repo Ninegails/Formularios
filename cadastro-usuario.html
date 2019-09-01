@@ -2,69 +2,57 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Cadastro de usuário</title>
+    <title>Cadastro Usuário</title>
 </head>
-<body>
-    <h1>Cadastro de Usuário</h1>
-    <hr>
-     
-        <fieldset>
-        <legend><strong>Informações pessoais</strong></legend>
-        <!--Container-->
-        <form name = "form_cadastro_usuario" action = "salvar-usuario.html" method = "post">
-            <label for = "Nome">Nome: </label>
-            <input id = "nome" name = "nome" required>
-            <label for = "sobrenome">Sobrenome: </label>
-            <input id ="sobrenome" name = "sobrenome" required><br><br>
-            <label for = "email">E-mail: </label>
-            <input id = "email" name = "email" required type = "email"><br><br>
-            </fieldset>
+<body style="color: black; background: slategray; font-family: 'trebuchet MS'">
+    <h1 style="color: black; border-bottom: 3px solid black; width: 500px; text-align:center; margin-left: auto; margin-right: auto">Cadastro de Usuário</h1>
+    
+    
+     <!-- Container -->
+     <form name="form_cadastro_usuario" action="salvar-usuario.html" method="post" style="width: 400px; margin-right: auto; margin-left: auto; border: 3px double black; padding: 50px">
+        <fieldset style="font-weight: bold; display: inline-block; padding: 9px">
+            <legend style="text-align: center"><b>Informações Pessoais</b></legend>
 
-            <fieldset>
-            <legend><strong>Informações de Usuário</strong></legend>
-            <hr>
-            <label for = "nome-de-usuario">Nome de usuário: </label>
-            <input id = "nome-de-usuario" name = "nome-de-usuario" placeholder = "Digite o seu nome de usuário" required><br><br>
+            <label for="nome" style="text-align: left">Nome:</label> &nbsp; <input id="nome" name="nome" required><br><br>
+            <label for="sobrenome">Sobrenome: </label> &nbsp; <input id="sobrenome" name="sobrenome" required><br><br>
+            <label for="email">E-mail</label> &nbsp; <input id="email" name="email" required type="email"><br><br>
+        </fieldset>
+        <br>
+        <fieldset style="font-weight: bold; display: inline-block; padding: 9px">
+            <legend style="text-align: center"><b>Informações de Usuário</b></legend><br>
 
-            <label for = "Senha">Senha: </label>
-            <input id = "senha" name = "senha" type = "password" placeholder = "Digite sua senha" required>
-
-            <label for = "confirmaçao-de-senha">Confirmação de Senha: </label>
-            <input id = "confirmaçao-senha" name = "confirmaçao-senha" type = "password" placeholder = "Confirme sua senha" required><br><br>
-
-            <label for = "Dica-senha">Dica de Senha: </label>
-            <input id = "Dica-senha" name = "Dica-senha" placeholder = "Dica para sua senha" required><br>
-            </fieldset>
-
-            <fieldset>
-            <legend><strong>Redes Sociais</strong></legend>
-            <hr>
-            <img src = "linkedin.png"><label>LinkedIn: </label>
-            <input id = "Linkedin" name = "Linkedin" placeholder = "Link do seu LinkedIn"></input><br>
-
-            <img src ="face.png"><label>Facebook: </label>
-            <input id = "Facebook" name = "Facebook" placeholder = "Link para o seu facebook"><br>
-
-            <img src = "insta.png"><label>Instagram: </label>
-            <input id = "instagram" name = "instagram" placeholder = "Link para o seu Instagram"><br><br>
-            </fieldset>
+            <label for="nomeUsuario">Nome de Usuário:</label> &nbsp; <input id="nomeUsuario" name="nomeUsuario" required><br><br>
+            <label for="senha">Senha: </label> &nbsp; <input id="senha" name="senha" type="password" required><br><br>
+            <label for="confSenha">Confirmar Senha: </label> &nbsp; <input id="confSenha" name="confSenha" type="password" required><br><br>
+            <label for="dicaSenha">Dica de Senha: </label> &nbsp; <input id="dicaSenha" name="dicaSenha" required><br><br>
+        </fieldset>
+        <br>
+        <fieldset style="font-weight: bold; display: inline-block; padding: 9px">
+            <legend style="text-align: center"><b>Redes Sociais</b></legend>
+            <img src="imagens/iconfinder_linkedin_circle_color_107178.png"> &nbsp; <label for="linkedin"><em>Linkedin.com/in</em></label> &nbsp; <input id="linkedin" name="linkedin"><br><br>
+            <img src="imagens/iconfinder_facebook_313103.png"> &nbsp; <label for="facebook"><em>Facebook.com</em></label> &nbsp; <input id="facebook" name="facebook"><br><br>
+            <img src="imagens/iconfinder_instagram_313113.png"> &nbsp; <label for="instagram"><em>Instagram.com</em></label> &nbsp; <input id="instagram" name="instagram"><br><br>
+        </fieldset>
+        <fieldset style="font-weight: bold; display: inline-block; padding: 9px">
+            <legend style="text-align: center"><strong>Contrato</strong></legend>
+            Aceita os termos do Contrato?
             <br>
+            <input type="radio" name="contrato">Sim &nbsp;&nbsp;
+            <input type="radio" name="contrato">Não &nbsp;&nbsp; <br>
+            <br>
+            Aceita esse outro Contrato?
+            <select name="contrato2">
+                <option></option>
+                <option>Sim</option>
+                <option>Com certeza</option>
+            </select>
 
-            <fieldset>
-                <legend><strong>Contrato</strong></legend>
-                Aceita os termos do contrato?
-                <br>
-                <input type = "radio" name = "contrato">Sim &nbsp; &nbsp;<input type = "radio" name = "contrato">Não <br><br>
-
-                Aceita este outro contrato?
-                <select name = "contrato2">
-                    <option></option>
-                    <option>Sim</option>
-                    <option>Com certeza</option>
-                </select>
-            </fieldset>
-            <button>Salvar</button>
-
-         </form>
+        </fieldset>
+        <br>
+        <div style="text-align: center">
+        <button style="padding: 10px; font-size: 15px; border: 3px solid black; background: white; color:steelblue; font-weight: bold; width: 100px; margin-left: auto; margin-right: auto; background-position: center">Salvar</button>
+        </div>
+    </form>
+        
 </body>
 </html>
